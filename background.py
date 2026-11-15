@@ -3,6 +3,13 @@ import random
 
 trunk = pygame.Color("brown1")
 leaf_1 = pygame.Color("green2")
+leaf_2 = pygame.Color("darkgreen")
+sky = pygame.Color("skyblue")
+Grass = pygame.Color("Green")
+dirt = pygame.Color("brown")
+
+W, H = 900, 520
+Ground = 390
 
 class Background:
     def __init__(self, world_L):
@@ -63,8 +70,7 @@ class Background:
         seg = L // 20
         for i in range(seg):
             leaf_y = i * 20 + 10
-            pygame.draw.circle(surf, leaf_1, (s + 4, leaf_y), 4)
-
+            pygame.draw.circle(surf, leaf_1, (x + 4, leaf_y), 4)
 
     def sky_layer(self, surf, cam):
         surf.fill(sky, (0, 0, W, Ground))
@@ -83,11 +89,11 @@ class Background:
         for vx, vlen in self.vines:
             sx = int(vx - (cam * 0.6))
             if -20 < sx < W+20:
-                self.vine(surf, sx, vlenf)
+                self.vine(surf, sx, vlen)
 
 
     def ground_layer(self, surf, cam):
-        pygame.draw.rect(surf, grass, (0, Ground, W, 24))
+        pygame.draw.rect(surf, Grass, (0, Ground, W, 24))
 
         pygame.draw.rect(surf, dirt, (0, Ground + 24, W, H-Ground - 24))
 
@@ -96,4 +102,4 @@ class Background:
             base_y = Ground - int(50 * scale)
 
             if - 60 < sx < W+ 60:
-                self.tree(surf, sx, base_y, scale, dark=False)
+                self.tree(surf, sx, base_y, scale, dark=False) 
