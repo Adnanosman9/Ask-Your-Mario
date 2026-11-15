@@ -17,3 +17,9 @@ What's Left to Build
 * Fix bugs among all files. 
 
 <img width="794" height="499" alt="Screenshot 2026-11-13 035343" src="https://github.com/user-attachments/assets/174f2c8c-5845-4cc2-bd24-43409568725c" />
+
+### Using AI
+
+I have messed up variable names by using shorts names that does not align with the usage. Now while connecting all the parts, I found that some variable names are used multiple times for different variables. Solving this out of 1000 lines would be messy.
+
+So I used AI to make this variables different and made a `.md` file to keep track of the names. 
