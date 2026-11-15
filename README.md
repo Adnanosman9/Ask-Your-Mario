@@ -23,3 +23,11 @@ What's Left to Build
 I have messed up variable names by using shorts names that does not align with the usage. Now while connecting all the parts, I found that some variable names are used multiple times for different variables. Solving this out of 1000 lines would be messy.
 
 So I used AI to make this variables different and made a `.md` file to keep track of the names. 
+
+
+<img width="414" height="240" alt="1115" src="https://github.com/user-attachments/assets/cd3551ca-6cf2-496a-9b7a-04713a72afc2" />
+
+
+### 1st complete run but found 2 issues
+* Traps are being placed so close that jumping over them is impossible
+* Heart mechanism is working, but hearts are showing 3 hearts even after getting a hit
