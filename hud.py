@@ -1,5 +1,11 @@
 import pygame
 
+W, H = 900, 520
+Ground = 390
+white  = pygame.Color("white")
+dkgray = pygame.Color("grey4")
+purple = pygame.Color("purple3")
+
 
 def draw_hud(surf, lives, ques_done, ques_total, distance):
     hud_font = pygame.font.SysFont("Arial", 18, bold=True)
@@ -35,7 +41,7 @@ def draw_hud(surf, lives, ques_done, ques_total, distance):
 
 
     quiz_str = f"Quiz: {ques_done} / {ques_total}"
-    quiz_txt_img = hud_font.render(quiz_str, True, White)
+    quiz_txt_img = hud_font.render(quiz_str, True, white)
 
     text_x = (W // 2) - (quiz_txt_img.get_width() // 2)
     surf.blit(quiz_txt_img, (text_x, bar_y + 2))
