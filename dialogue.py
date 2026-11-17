@@ -4,6 +4,28 @@ white = pygame.Color("white")
 yellow = pygame.Color("yellow")
 
 
+def words(text, font, max_w):
+    if not text:
+        return [""]
+
+    lines = []
+    current = ""
+
+    for word in text.split():
+        candidate = f"{current} {word}".strip()
+        if font.size(candidate)[0] <= max_w:
+            current = candidate
+        else:
+            if current:
+                lines.append(current)
+            current = word
+
+    if current:
+        lines.append(current)
+
+    return lines
+
+
 class Dialogue:
     def __init__(self, ques_data, ques_number, total_ques):
 
@@ -70,7 +92,7 @@ class Dialogue:
 
         surf.blit(tittle_img, (box_x + 40, box_y+ 20))
 
-        wrapped_lines = wordss(self.question, quiz_font, max_w = 520)
+        wrapped_lines = words(self.question, quiz_font, max_w = 520)
         for i, line in enumerate(wrapped_lines):
             line_img = quiz_font.render(line, True, pygame.Color("white"))
             surf.blit(line_img, (box_x + 40, box_y + 70 + (i * 30)))
@@ -90,7 +112,7 @@ class Dialogue:
 
         elif self.status == "wrong":
             msg = quiz_font.render(f"Wrong, Answer: {self.answer}", True, pygame.Color("red"))
-            surf.blit(msg, box_x+40, box_y + 250)
+            surf.blit(msg, (box_x+40, box_y + 250))
 
         else:
             msg = quiz_font.render("Press Enter", True, yellow)
