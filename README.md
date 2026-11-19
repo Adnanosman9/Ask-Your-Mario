@@ -69,7 +69,6 @@ Another issue was drawing sage and some syntax and placing errors.
 
 Took suggestions from AI to draw the sage chaarcter. 
 
-## Built with
-  
-- Python 3.12
-- Pygame 2.6
+I had to change one thing. I removed the control.py from connection as it was making the whole screen black and as it was not neccessery cause here is only one control, so I removed it from main script. You guys can try to debug it if anyone is interested in it, so I did not remove the control.py from the repo. 
+
+
