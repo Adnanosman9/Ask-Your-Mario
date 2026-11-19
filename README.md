@@ -38,7 +38,7 @@ For demo to check how it runs -
 * Go to your downloads and run the application
 * The game will work automatically. Use `Space` or `W` or `Up` key to jump over traps
 * For the demo answer `......` to the sage's questions. 
-* If you want to modify sage questions and answers then follow the `How to run it guideline`
+* If you want to modify sage questions and answers then follow the [How to run it guideline](https://github.com/Adnanosman9/Ask-Your-Mario/blob/main/README.md#how-to-run-it)
 
   <img width="414" height="240" alt="1115" src="https://github.com/user-attachments/assets/a134ae4d-5cac-4821-acdb-df3316860c91" />
 
