@@ -1,12 +1,10 @@
 import pygame
 
-
-# Ground = 390
-# player = 135
-
-# brown = pygame.Color("brown")
-# skin = pygame.Color("peachpuff1")
-# black = pygame.Color("black")
+Ground = 390
+player = 135
+brown = pygame.Color("brown")
+skin  = pygame.Color("peachpuff1")
+black = pygame.Color("black")
 
 class Player:
     width, height = 30, 48
