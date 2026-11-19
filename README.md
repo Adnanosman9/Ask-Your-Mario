@@ -34,7 +34,7 @@ Click anything among `Space` `W` and `Up` to jump
 ## Demo:
 
 For demo to check how it runs - 
-* GO to the release section and download the `.exe` file
+* GO to the [release](https://github.com/Adnanosman9/Ask-Your-Mario/releases/tag/V1) section and download the `.exe` file
 * Go to your downloads and run the application
 * The game will work automatically. Use `Space` or `W` or `Up` key to jump over traps
 * For the demo answer `......` to the sage's questions. 
