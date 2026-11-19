@@ -1,28 +1,25 @@
 import pygame
 import sys
-from mario import Quiz
 
-W, H = 900, 520
-screen = pygame.display.set_mode((W, H))
-Ground = 390
+W, H    = 900, 520
+Ground  = 390
+sky     = pygame.Color("skyblue")
+leaf_1  = pygame.Color("green2")
+leaf_2  = pygame.Color("darkgreen")
+trunk   = pygame.Color("brown1")
+Grass   = pygame.Color("Green")
+dirt    = pygame.Color("brown")
+white   = pygame.Color("white")
+red     = pygame.Color("red")
+yellow  = pygame.Color("yellow")
+gold    = pygame.Color("yellow3")
+purple  = pygame.Color("purple3")
+skin    = pygame.Color("peachpuff1")
 
-sky = pygame.Color("skyblue")
-leaf_1 = pygame.Color("green2")
-leaf_2 = pygame.Color("darkgreen")
-trunk = pygame.Color("brown1")
-Grass = pygame.Color("Green")
-dirt = pygame.Color("brown")
-white = pygame.Color("white")
-red = pygame.Color("red")
-yellow = pygame.Color("yellow")
-gold = pygame.Color("yellow3")
-purple = pygame.Color("purple3")
-skin = pygame.Color("peachpuff1")
-
-def title_screen():
-    tittle_font = pygame.font.Font("Arial", 42, bold=True)
-    subtitle_font = pygame.font.Font("Arial", 24, bold=True)
-    menu_font = pygame.font.Font("Arial", 18, bold=True)
+def title_screen(screen, quiz_length=5):
+    tittle_font = pygame.font.SysFont("Arial", 42, bold=True)
+    subtitle_font = pygame.font.SysFont("Arial", 24, bold=True)
+    menu_font = pygame.font.SysFont("Arial", 18, bold=True)
 
     tree_wave = 0
     clock = pygame.time.Clock()
@@ -94,7 +91,6 @@ def title_screen():
         line3 = menu_font.render("Wrong ans = Game over!", True, red)
         screen.blit(line3, (W // 2 - line3.get_width() // 2, 280))
 
-        quiz_length = len(Quiz) if 'Quiz' in globals() else 5
         line4 = menu_font.render(f"Clear all Questions: {quiz_length}", True, white)
         screen.blit(line4, (W // 2 - line4.get_width() // 2, 310))
 
