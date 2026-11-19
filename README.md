@@ -35,9 +35,9 @@ Click anything among `Space` `W` and `Up` to jump
 
 For demo to check how it runs - 
 * GO to the release section and download the `.exe` file
-* Go to you download and run the application
+* Go to your downloads and run the application
 * The game will work automatically. Use `Space` or `W` or `Up` key to jump over traps
-* For demo answer `......` to the sage's questions. 
+* For the demo answer `......` to the sage's questions. 
 * If you want to modify sage questions and answers then follow the `How to run it guideline`
 
   <img width="414" height="240" alt="1115" src="https://github.com/user-attachments/assets/a134ae4d-5cac-4821-acdb-df3316860c91" />
