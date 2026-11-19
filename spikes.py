@@ -1,10 +1,9 @@
 import pygame
 import random
 
-# Ground = 390
-# gray = pygame.Color("grey")
-
-# W, H = 900, 520
+W, H = 900, 520
+Ground = 390
+gray = pygame.Color("grey")
 
 
 class Spikes:
