@@ -1,16 +1,14 @@
 import sys
 import pygame
 
-# W, H = 900, 520
-# screen = pygame.display.set_mode((W, H))
-
-# gray = pygame.Color("grey")
-# dkgray = pygame.Color("grey4")
-# white = pygame.Color("white")
-# red = pygame.Color("red")
+W, H   = 900, 520
+gray   = pygame.Color("grey")
+dkgray = pygame.Color("grey4")
+white  = pygame.Color("white")
+red    = pygame.Color("red")
 
 
-def over_screen(reason):
+def over_screen(screen, reason):
     clock = pygame.time.Clock()
     over_font = pygame.font.SysFont("Arial", 46, bold=True)
     reason_font = pygame.font.SysFont("Arial", 24, bold=True)
