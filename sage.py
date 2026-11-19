@@ -1,10 +1,18 @@
-import pygame 
+import pygame
 
-purple = pygame.Color("purple3")
-Ground = 390
 W, H = 900, 520
+Ground = 390
+purple  = pygame.Color("purple3")
+LTpurp  = pygame.Color("purple")
+yellow  = pygame.Color("yellow")
+gold    = pygame.Color("yellow3")
+skin    = pygame.Color("peachpuff1")
+white   = pygame.Color("white")
+gray    = pygame.Color("grey")
+brown   = pygame.Color("brown")
 
-F_LG = pygame.font.SysFont("Arial", 28, Bold= True)
+
+font = pygame.font.SysFont("Arial", 28, bold=True)
 
 class Sage:
     def __init__(self, wx):
@@ -54,7 +62,7 @@ class Sage:
         robe_points = [
             (px + 2, py+ 20),
             (px + 36, py+ 20),
-            (px+42, Ground)
+            (px+42, Ground),
             (px - 4, Ground)
         ]
 
@@ -67,7 +75,7 @@ class Sage:
 
         pygame.draw.circle(surf, skin, (px+19, py+12), 13)
         pygame.draw.ellipse(surf, white, (px+8, py+20, 22,12))
-        pygame.draw.ellipse(surf, gray, (px+10, p+21, 18, 9))
+        pygame.draw.ellipse(surf, gray, (px+10, py+21, 18, 9))
 
 
         # pygame.draw.polygon(surf, purple, (px + 5, py + 4), (px + 33, py + 4), (px + 19, py - 28))
@@ -83,7 +91,7 @@ class Sage:
 
         pygame.draw.circle(surf, white, (px+13, py+12,), 4)
         pygame.draw.circle(surf, purple, (px+13, py+12), 2)
-        pygame.draw.circle(surf, (px+14, py+11), 1)
+        pygame.draw.circle(surf, yellow, (px+13, py+11), 1)
 
         pygame.draw.circle(surf, white, (px+25, py+12), 4)
         pygame.draw.circle(surf, purple, (px+25, py+12), 2)
@@ -97,6 +105,6 @@ class Sage:
 
         pygame.draw.circle(surf, white, (px+42 + self.spark_x, py - 8+ self.spark_y), 3)
 
-        ques = F_LG.render("?", True, gold)
+        ques = font.render("?", True, gold)
 
         surf.blit(ques, (px+8, py-56 + self.question_y))
