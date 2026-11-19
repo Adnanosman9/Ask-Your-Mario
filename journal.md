@@ -31,3 +31,6 @@ So I used AI to make this variables different and made a `.md` file to keep trac
 ### 1st complete run but found 2 issues
 * Traps are being placed so close that jumping over them is impossible
 * Heart mechanism is working, but hearts are showing 3 hearts even after getting a hit
+
+
+I had to change one thing. I removed the control.py from connection as it was making the whole screen black and as it was not neccessery cause here is only one control, so I removed it from main script. 
