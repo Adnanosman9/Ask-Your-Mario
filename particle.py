@@ -1,11 +1,12 @@
 import pygame
 import random
 
-# red = pygame.Color("red")
-# orange = pygame.Color("orange")
-# yellow = pygame.Color("yellow")
-# gold = pygame.Color("yellow3")
-# purple = pygame.Color("purple3")
+W, H = 900, 520
+red    = pygame.Color("red")
+orange = pygame.Color("orange")
+yellow = pygame.Color("yellow")
+gold   = pygame.Color("yellow3")
+purple = pygame.Color("purple3")
 
 class Particle:
     def __init__(self, x, y, color, speed_x, speed_y):
