@@ -1,7 +1,12 @@
 import pygame
 import sys
 
-pygame.init()
+W, H = 900, 520
+Ground = 390
+red    = pygame.Color("red")
+orange = pygame.Color("orange")
+white  = pygame.Color("white")
+black  = pygame.Color("black")
 
 def draw_warning(surf, obstacles, cam):
     warn_font = pygame.font.SysFont("Arial", 22, bold=True)
@@ -22,12 +27,11 @@ def draw_warning(surf, obstacles, cam):
 
     current_time = pygame.time.get_ticks()
     if(current_time // 200) % 2 == 0:
-        color = red 
+        color = red
         text_color = white
-
     else:
-        color = orange 
-        txt_color = black
+        color = orange
+        text_color = black
 
 
     alert_x = W - 75
@@ -54,7 +58,7 @@ def draw_warning(surf, obstacles, cam):
 
     surf.blit(exclamation, (text_x, text_y))
 
-    distance_rem = int(closest_x - Player)
+    distance_rem = int(closest_x - 135)
 
     if distance_rem > 0:
         distance_str = f"{distance_rem}px"
