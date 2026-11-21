@@ -2,8 +2,8 @@
 
 ### This is a simple running game with Q&A
 
+<img width="905" height="551" alt="image" src="https://github.com/user-attachments/assets/6637f507-c388-45e8-ae1e-0245857db7ba" />
 
-<img width="364" height="240" alt="1117 (1)" src="https://github.com/user-attachments/assets/b522c848-6cc0-46bd-b731-13b6ca80071d" />
 
 
 A small character running forward. Jump over traps and firepillars to survive. 
