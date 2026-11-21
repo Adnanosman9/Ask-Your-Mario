@@ -53,6 +53,9 @@ I tried to make the 2d background and design good but it was hard for me to plac
 
 <img width="897" height="547" alt="Screenshot 2026-11-17 124609" src="https://github.com/user-attachments/assets/c8e8609d-5ff9-4c3e-9557-76c464da6740" />
 
+### Character 
+
+<img width="794" height="499" alt="image" src="https://github.com/user-attachments/assets/6c297bb8-4349-44fc-a23f-609e64f3a510" />
 
 ## Debugging:
 
